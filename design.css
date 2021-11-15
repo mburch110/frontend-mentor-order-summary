@@ -6,6 +6,8 @@
 
 :root {
   --cl-pale-blue: hsl(225, 100%, 94%);
+  --cl-bright-blue: hsl(245, 75%, 52%);
+  --cl-bright-blue-hover: hsl(245, 75%, 70%);
   --cl-very-pale-blue: hsl(225, 100%, 98%);
   --cl-desaturated-blue: hsl(224, 23%, 55%);
   --cl-dark-blue: hsl(223, 47%, 23%);
@@ -13,7 +15,6 @@
 
 body {
   font-family: "Red Hat Display", monospace;
-  margin: 0;
   background-repeat: no-repeat;
   background-image: url(images/pattern-background-mobile.svg);
   background-color: var(--cl-pale-blue);
@@ -56,6 +57,30 @@ body {
   color: var(--cl-desaturated-blue);
 }
 
+.c-summary__link--proceed {
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: var(--cl-bright-blue);
+  padding: 0.8rem;
+  border-radius: 1em;
+}
+
+.c-summary__link--proceed:hover,
+.c-summary__link--proceed:focus {
+  background-color: var(--cl-bright-blue-hover);
+}
+
+.c-summary__link--cancel {
+  text-decoration: none;
+  color: var(--cl-desaturated-blue);
+}
+
+.c-summary__link--cancel:hover,
+.c-summary__link--cancel:focus {
+  color: var(--cl-dark-blue);
+}
+
 .c-headline {
   margin-top: 0;
 }
@@ -74,7 +99,7 @@ body {
 }
 
 .cl-order__image {
-  flex-basis: 20%;
+  flex-basis: 14%;
 }
 
 .c-order__price {
@@ -82,17 +107,22 @@ body {
   font-size: 0.9rem;
 }
 
+.c-order__link {
+  color: var(--cl-bright-blue);
+}
+
+.c-order__link:hover,
+.c-order__link:focus {
+  color: var(--cl-bright-blue-hover);
+}
+
 .l-order-container {
   flex-basis: 60%;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  padding-left: 1.5rem;
 }
-
-.l-order-link {
-  flex-basis: 20%;
-}
-
-/* .link-- */
 
 @media screen and (min-width: 500px) {
   body {
