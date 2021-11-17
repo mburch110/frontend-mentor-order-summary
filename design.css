@@ -57,7 +57,7 @@ body {
   color: var(--cl-desaturated-blue);
   width: 90%;
   margin: 0 auto 1.375rem auto;
-  line-height: 1.8;
+  line-height: 1.5;
 }
 
 .c-summary__link {
